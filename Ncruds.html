@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cruds.css">
+  <script>
+var butt=document.createElement('button');
+butt.innerHTML='Update';
+var butt2=document.createElement('button');
+butt2.innerHTML='Delete';
+
+  </script>  
+</head>
+<body>
+   
+    <div class="numero">
+        <span id="numero"></span>
+    </div>
+    <div class="divform">
+        <h1>PRODUCT MANAGEMENT SYSTEM</h1>
+        <div id="alert">
+            <span>To<span class="spn1"> continue benefiting</span> from this service. You must access your accounts and verify that you have paid.
+                If you encounter any problem, you can contact us via email to solve it : <span class="email">ay.bouguern@gmail.com</span>
+                <br>Thank you for your understanding .</span>
+            <button type="button" id="btnalert">OK</button>
+          </div>
+        
+        <div class="inputs">
+        <input type="text" placeholder="title" name="title" id="inp1">
+        <div class="divinp">
+            <input type="number" placeholder="price" name="title" id="inp2">
+            <input type="number" placeholder="taxes" name="title" id="inp3">
+            <input type="number" placeholder="ads" name="title" id="inp4">
+            <input type="number" placeholder="discount" name="title" id="inp5">
+            <span id="spn">TOTAL:<span id="total"></span></span>
+        </div>
+        <input type="number" placeholder="count (MAX = 30)" name="title" id="inp6">
+        <input type="text" placeholder="categorie" name="title" id="inp7">
+        <button id="btn1" >Create</button>
+        <input type="text" placeholder="Search by title" name="title" id="search">
+    </div>
+        <div class="buttons">
+            <button class="btn2" type="submit">Search by title</button>
+            <button  class="btn3" type="submit">Search by category</button>
+        </div>
+
+        
+
+
+        <!--
+        table
+        -->  
+<div class="table">
+    <table id="tab">
+        <tr><th id="th">ID</th>  <th>TITLE</th>  <th>PRICE</th> <th>TAXES</th> <th>ADS</th> <th>DISCOUNT</th>  <th>TOTAL</th><th>CATEGORY</th> <th>UPDATE</th> <th>DELETE</th></tr>
+    
+      
+    </table>
+</div>
+        
+    </div>
+     <a href="login.php" class="lien"><i class="fa-solid fa-right-from-bracket">Log Out</i></a>
+    <script src="Ncruds.js"></script>
+    
+</body>
+</html>

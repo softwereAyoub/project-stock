@@ -71,7 +71,6 @@ $insert->execute(["oui","d",htmlspecialchars($_POST['custom'])]);
         }
 
 
-        // يمكنك هنا تنفيذ إجراءات أخرى مثل إرسال رسالة تأكيد إلى المستخدم.
     
     
 
